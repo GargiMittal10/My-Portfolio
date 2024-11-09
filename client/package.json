@@ -2,12 +2,15 @@
   "name": "mern-portfolio",
   "version": "1.0.0",
   "description": "A personal portfolio website showcasing projects, skills, and resume.",
+  "homepage": "https://gargimittal10.github.io/My-Portfolio/",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "keywords": [
     "portfolio",
@@ -39,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }

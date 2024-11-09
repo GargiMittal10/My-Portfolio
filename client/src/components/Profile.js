@@ -8,7 +8,7 @@ const Profile = () => {
       <h2>Profile</h2>
       <div className="profile-content">
         <div className="profile-image">
-          <img src="/gargi.jpg" alt="Your Name" />
+        <img src={`${process.env.PUBLIC_URL}/gargi.jpg`} alt="Your Name" />
         </div>
         <div className="profile-text">
           <p>

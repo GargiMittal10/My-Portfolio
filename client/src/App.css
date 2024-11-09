@@ -1,0 +1,63 @@
+/* src/App.css */
+
+/* General Styling for the App */
+main {
+    padding-top: 70px; /* Offset for fixed navbar */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Section Heading Styles */
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Button Style (e.g., download button in Resume section) */
+  button,
+  a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover,
+  a.btn:hover {
+    background-color: #0056b3;
+  }
+  /* src/App.css */
+
+/* .main-content {
+  padding-right: 220px;
+  padding-top: 20px; 
+} */
+body {
+  background-image: url('/public/portfolio.jpg'); 
+  background-size: 2000px 1450px; /* Replace with desired width and height */
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}

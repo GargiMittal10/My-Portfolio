@@ -1,0 +1,47 @@
+/* src/components/Home.css */
+
+.home {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
+  z-index: 1;
+}
+
+.home-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0); /* Semi-transparent background behind text */
+  border-radius: 8px;
+}
+
+.home-content h1 {
+  font-size: 3.5rem; /* Slightly larger font size */
+  font-weight: 700; /* Bold text for better readability */
+  color: #ffffff;
+}
+
+.home-content h2 {
+  font-size: 1.7rem; /* Slightly larger font size */
+  margin-top: 15px;
+  font-weight: 500;
+  color: #e0e0e0; /* Light gray for contrast */
+}
+
+

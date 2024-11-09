@@ -1,0 +1,85 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px; /* Increased padding for a bigger navbar */
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5); /* Darker transparent background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly heavier shadow */
+  transition: background-color 0.3s ease;
+}
+
+/* Dark mode transparency for the navbar */
+.dark-mode .navbar {
+  background: rgba(33, 33, 33, 0.6); /* Darker background in dark mode */
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* Increased gap for better spacing */
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu li a {
+  font-size: 1.1rem; /* Increased font size */
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 0; /* More padding for better clickable area */
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+/* Hover effect without background */
+.navbar-menu li a:hover {
+  color: #e0a25a; /* Warmer yellow color on hover */
+  border-bottom: 2px solid #e0a25a; /* Underline effect on hover */
+}
+
+/* Active link styling */
+.navbar-menu li a.active {
+  color: #e0a25a;
+  font-weight: 700;
+  border-bottom: 2px solid #e0a25a;
+}
+
+/* Dark Mode Link Colors */
+.light-mode .navbar-menu li a {
+  color: #ffffff;
+}
+
+.dark-mode .navbar-menu li a {
+  color: #f1f1f1;
+}
+
+.dark-mode .navbar-menu li a.active {
+  color: #e0a25a;
+  border-bottom: 2px solid #e0a25a;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem; /* Increased icon size */
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .toggle-button {
+  color: #f1f1f1;
+}
+
+.toggle-button:hover {
+  color: #e0a25a;
+}

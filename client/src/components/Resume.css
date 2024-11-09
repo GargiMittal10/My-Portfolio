@@ -1,0 +1,189 @@
+/* Overall Resume Background */
+body {
+  background: rgba(186, 45, 39, 1); /* Warm red solid background */
+  margin: 0; /* Removes all margin on body */
+  padding: 0; /* Removes all padding on body */
+  
+}
+
+/* Container Styling */
+.resume-container {
+  text-align: center;
+  padding: 50px 30px;
+  width: 100%; /* Makes the container full width */
+  max-width: 1620px; /* Optional limit to width if needed for large screens */
+  margin: 0 auto; /* Centers horizontally without vertical margin */
+  background: linear-gradient(135deg, rgba(222, 2, 2, 0.534), rgba(177, 8, 2, 0.447), rgba(206,4,4,0.40));;
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(200, 210, 220, 0.3);
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/* Header Styling */
+.resume-header {
+  padding: 20px 0;
+  border-bottom: 2px solid rgba(164, 52, 45, 0.6); /* Slightly darker red */
+  margin-bottom: 40px;
+}
+
+.resume-header h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #ffffff; /* White text for contrast */
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.resume-header h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #f3dad7; /* Softer pinkish tone for a subtle complementary look */
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 25px;
+}
+
+/* Download Button */
+.download-button {
+  display: inline-block;
+  padding: 12px 35px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #b84035, #a43a2d); /* Subtle red gradient */
+  color: #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(164, 52, 45, 0.3); /* Shadow in soft red */
+}
+
+.download-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(164, 52, 45, 0.4);
+}
+
+/* Content Styling */
+.resume-content {
+  padding: 20px;
+}
+
+/* Section Styling */
+.resume-section {
+  margin-bottom: 35px;
+  padding: 35px; /* Increased padding for a more spacious layout */
+  background: #f7dcdc; /* Light background for contrast with container */
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid rgba(194, 50, 45, 0.5); /* Soft warm red border for emphasis */
+  backdrop-filter: blur(4px);
+}
+
+.resume-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Header */
+.resume-section h3 {
+  font-size: 1.6rem;
+  color: #b84035; /* Warm dark red for section titles */
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(230, 150, 150, 0.5); /* Light border */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Icon Styling */
+.section-icon {
+  color: rgba(150, 20, 20, 0.7); /* Soft dark red for icon */
+  font-size: 1.4rem;
+}
+
+/* Resume Item Styling */
+.resume-item {
+  margin-bottom: 25px;
+  position: relative;
+  padding-left: 25px;
+  border-left: 2px solid #cbd5e0;
+}
+
+.resume-item h4 {
+  font-size: 1.2rem;
+  color: #2d3748;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.resume-item p {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.skills-list, .languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #4a5568;
+  padding-left: 0;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  list-style-type: none; /* Removes bullets */
+}
+
+.skills-list li, .languages-list li {
+  background: #edf2f7;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-weight: 500;
+  color: #2d3748;
+  transition: background 0.3s ease;
+}
+
+.skills-list li:hover, .languages-list li:hover {
+  background: #b84035;
+  color: #ffffff;
+}
+
+/* Decorative Hover Effect on Resume Items */
+.resume-item:hover {
+  transform: translateX(4px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .resume-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .resume-section h3 {
+    font-size: 1.4rem;
+  }
+
+  .resume-item h4 {
+    font-size: 1.1rem;
+  }
+
+  .download-button {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}

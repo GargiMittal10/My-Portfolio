@@ -1,0 +1,77 @@
+.projects {
+  padding: 80px 20px;
+  background: rgba(80, 150, 85, 0.4); /* Lighter green background with transparency for softness */
+  position: relative;
+  color: #ffffff;
+  overflow: hidden;
+  border-bottom: 4px solid rgba(60, 90, 65, 0.6); /* Subtle border for depth */
+  box-shadow: 0 4px 8px rgba(60, 90, 65, 0.3); /* Softer shadow for a cohesive look */
+}
+
+.projects::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(70, 125, 75, 0.35); /* Light overlay for text readability */
+  z-index: 0;
+}
+
+.projects-title {
+  position: relative;
+  z-index: 1;
+  font-size: 2.8rem;
+  color: #f0f5f0; /* Softer white with a hint of green for harmony */
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Project List */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Project Card Styling */
+.project-card {
+  background: linear-gradient(135deg, rgba(90, 135, 95, 0.3), rgba(110, 180, 125, 0.5)); /* Soft gradient for depth */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(50, 65, 55, 0.2); /* Softened shadow in muted green */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  color: #ffffff;
+  width: 100%;
+  border: 1px solid rgba(85, 115, 90, 0.3); /* Transparent green border for cohesion */
+  position: relative;
+  overflow: hidden;
+}
+.project-card h4 {
+  font-size: 1.3rem;
+  color: #f0f5f0; /* Light color for visibility */
+  margin-bottom: 8px;
+}
+.project-card h3 {
+  font-size: 1.6rem;
+  color: #dbf8e3a7; /* Warm, light gold for a subtle highlight */
+  margin-bottom: 15px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Light underline */
+  font-family: 'Roboto', sans-serif;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, rgba(85, 125, 90, 0.6), rgba(105, 160, 115, 0.5)); /* Enhanced gradient for hover effect */
+  box-shadow: 0 10px 25px rgba(50, 70, 55, 0.25); /* Slightly darker shadow on hover */
+}
